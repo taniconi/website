@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* CSS Document */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+background-color: #ffe4e1; }
+  
+  body {
+font-family: 'Yusei Magic', sans-serif;
+  font-size: 20px; }
+
+p, li, dl {
+  line-height: 1.6;
+  color: #000; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+h1, h2, h3, h4 {
+  letter-spacing: 4px; }
+
+h2 {
+  font-size: 3rem;
+  margin: 64px 0; }
+
+h3 {
+  font-size: 2rem;
+  margin: 32px 0; }
+
+h4 {
+  font-size: 22px;
+  margin: 24px 0; }
+
+.wrapper {
+  display: flex; }
+
+.grid {
+  display: grid; }
+
+.button {
+  display: inline-block;
+  background-color: #ffc0cb;
+  padding: 8px 16px;
+  margin: 16px 0;
+  border-radius: 8px; }
+
+ul, dl {
+  list-style: none; }
+
+@media screen and (max-width: 959px) {
+  img {
+    max-width: 100%;
+    height: auto; } }
+/*---------------------------------
+横幅設定
+---------------------------------*/
+header nav ul, header .topimg, main section {
+  width: 960px;
+  margin: 0 auto; }
+  @media screen and (max-width: 959px) {
+    header nav ul, header .topimg, main section {
+      width: 90%; } }
+
+/*---------------------------------
+ヘッダー
+---------------------------------*/
+  /*スマホ用メニューボタン------------------*/
+  header .menubtn {
+    display: none; }
+    @media screen and (max-width: 959px) {
+      header .menubtn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 48px;
+        height: 48px;
+        background-color: #aaa;
+        display: block;
+        z-index: 1000; }
+        header .menubtn span {
+          position: fixed;
+          display: block;
+          transition: 0.3s; }
+        header .menubtn span:first-child, header .menubtn span:nth-child(3) {
+          right: 4px;
+          border-bottom: 3px solid #000;
+          width: 40px; }
+        header .menubtn span:first-child {
+          top: 10px; }
+        header .menubtn span:nth-child(2) {
+          top: 19px;
+          right: 10px;
+          font-size: 1rem; }
+        header .menubtn span:nth-child(3) {
+          top: 34px; }
+        header .menubtn.active span {
+          transition: 0.3s; }
+        header .menubtn.active span:first-child {
+          top: 22px;
+          transform: rotate(45deg); }
+        header .menubtn.active span:nth-child(2) {
+          display: none; }
+        header .menubtn.active span:nth-child(3) {
+          top: 22px;
+          transform: rotate(-45deg); } }
+
+  /*メニュー-------------------------------*/
+  header .globalnav {
+    display: block;
+    background-color: #ffc0cb; }
+    @media screen and (max-width: 959px) {
+      header .globalnav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        padding: 80px 0;
+        z-index: 999; } }
+    header .globalnav ul {
+      display: flex;
+      justify-content: flex-end; }
+      @media screen and (max-width: 959px) {
+        header .globalnav ul {
+          display: block; } }
+      header .globalnav ul li {
+        padding: 16px;
+        letter-spacing: 2px; }
+    @media screen and (max-width: 959px) {
+      header .globalnav {
+        display: none; } }
+
+  /*トップ画像-----------------------------*/ 
+  header .topimg {
+    position: relative;
+    margin-top: 24px; }
+    @media screen and (max-width: 959px) {
+      header .topimg {
+        width: 100vw;
+        margin: 0; } }
+    header .topimg img {
+      display: block;
+      max-width: 100%; }
+    header .topimg h1 {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 100%;
+      height: 4rem;
+      font-size: 4rem;
+      text-align: center; }
+
+
+/*キャラクター---------------------*/
+#chara .each {
+  margin-bottom: 24px;
+  grid-template-columns: 1fr 1fr; }
+  #chara .each div {
+    padding: 82px; }
+  #chara .each img {
+    max-width: 468px;
+    max-height: 351px; }
+    @media screen and (max-width: 959px) {
+      #chara .each img {
+        width: 100%;
+        height: auto; } }
+  @media screen and (max-width: 959px) {
+    #chara .each {
+      display: block;
+      margin-bottom: 40px; }
+      #chara .each div {
+        padding: 0; } }
+
+/*---------------------------------
+フッター
+---------------------------------*/
+footer {
+  position: relative;
+  background-color: #ffc0cb;
+  text-align: center;
+  height: 96px; }
+  @media screen and (max-width: 959px) {
+    footer {
+      height: auto; }
+      footer small {
+        display: inline-block;
+        margin: 16px; } }
+  footer nav ul {
+    display: flex;
+    justify-content: center; }
+    footer nav ul li {
+      margin: 16px;
+      letter-spacing: 2px; }
+  @media screen and (max-width: 959px) {
+    footer nav {
+      display: none; } }
+  footer .totop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 96px;
+    background-color: #db7093; }
+    @media screen and (max-width: 959px) {
+      footer .totop {
+        width: 48px; } }
+    footer .totop i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      font-size: 3rem;
+      height: 30px;
+      width: 30px; }
+      @media screen and (max-width: 959px) {
+        footer .totop i {
+          font-size: 2rem;
+          width: 20px;
+          height: 20px; } }
+          
