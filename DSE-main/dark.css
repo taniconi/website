@@ -1,0 +1,83 @@
+/*inspired by water.css*/
+:root {
+    --background-body: #202b38;
+    --background: #161f27;
+    --background-alt: #1a242f;
+    --selection: #1c76c5;
+    --text-main: #dbdbdb;
+    --text-bright: #fff;
+    --text-muted: #a9b1ba;
+    --links: #41adff;
+    --focus: #0096bfab;
+    --border: #526980;
+    --code: #ffbe85;
+    --animation-duration: 0.1s;
+    --button-hover: #324759;
+    --scrollbar-thumb: var(--button-hover);
+    --scrollbar-thumb-hover: rgb(65, 92, 115);
+    --form-placeholder: #a9a9a9;
+    --form-text: #fff;
+    --variable: #d941e2;
+    --highlight: #efdb43;
+    --active: #1c76c5;
+  }
+
+button {
+    color: #fff;
+    background-color: var(--background);
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 6px;
+    outline: none;
+}
+
+button:active {
+    background-color: var(--button-hover);
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    color: var(--form-text);
+    background-color: var(--background);
+}
+
+::placeholder {
+    color: #a9a9a9;
+    color: var(--form-placeholder);
+}
+  
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.2;
+    color: white;
+}
+/*
+     FILE ARCHIVED ON 02:56:09 Aug 26, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:44:44 Aug 26, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 78.962
+  exclusion.robots: 0.081
+  exclusion.robots.policy: 0.073
+  RedisCDXSource: 0.672
+  esindex: 0.006
+  LoadShardBlock: 62.931 (3)
+  PetaboxLoader3.datanode: 533.898 (4)
+  CDXLines.iter: 13.101 (3)
+  load_resource: 549.455
+  PetaboxLoader3.resolve: 56.617
+*/
