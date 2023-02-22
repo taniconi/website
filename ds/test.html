@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+
+</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://unpkg.com/7.css">
+<div class="window">
+  <div class="title-bar">
+    <div class="title-bar-text">A window with contents</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+  <ul role="menubar">
+  <li role="menuitem" tabindex="0" aria-haspopup="true">File
+    <ul role="menu">
+      <li role="menuitem"><a href="#menu"><label><input id="rom" type="file" hidden>
+            <button style="width:calc(100% - 2em);margin: 1em;" id="btn-choose-file" hidden>ファイルを選択</button>Save</label></a></li>
+      <li role="menuitem"><a href="#menu">Save As...</a></li>
+      <li role="menuitem"><a href="#menu">Exit</a></li>
+    </ul>
+  </li>
+  <li role="menuitem" tabindex="0" aria-haspopup="true-09">
+    Edit
+    <ul role="menu">
+      <li role="menuitem"><a onclick="whatsNew()" id="whats-new" href="#menu">What's New</a></li>
+      <li role="menuitem"><a href="#menu">Copy</a></li>
+      <li role="menuitem"><a href="#menu">Cut</a></li>
+      <li role="menuitem"><a href="#menu">Paste</a></li>
+      <li role="menuitem"><a href="#menu">Delete</a></li>
+      <li role="menuitem"><a href="#menu">Find...</a></li>
+      <li role="menuitem"><a href="#menu">Replace...</a></li>
+      <li role="menuitem"><a href="#menu">Go to...</a></li>
+    </ul>
+  </li>
+</ul>
+    <div id="pro" style="background-color: #333">
+        </div><span hidden>
+        <p id="ios-power-hint" hidden>
+            Please <b>turn off "Low Power Mode"</b> in iOS Control Center for better performance.<br>The battery icon is yellow if it's enabled.
+        </p>
+        <div id="ios-hint" hidden>
+            Due to iOS limitations, please open this site(https://ds.44670.org) in <b>Safari</b>, and add it to your
+            <b>Home Screen</b> by <b>Share Menu</b> to continue.
+            <p style="text-align: center;">⬇⬇⬇</p>
+        </div>
+        <div id="mac-warning" hidden>
+            WARNING:<br>
+            It looks like you are using macOS.<br>
+            Due to macOS Safari <a href="https://webkit.org/tracking-prevention/">limitations</a>, ALL of you save data
+            will be LOST after 7 days of inactivity.<br>
+            For this reason, it is highly recommended to use a different browser. (For example: <a
+                href="https://www.google.com/chrome/">Chrome</a>)
+        </div></span>
+       </div>
+<div id="player" hidden>
+        <canvas id="top" width="256" height="192"></canvas>
+        <canvas id="bottom" width="256" height="192"></canvas>
+    </div>
+  </div>
+</div>
+    <script src="localforage.js"></script>
+    <script src="pako.min.js"></script>
+    <script src="app.js"></script>
+    <script src="build/nds.js"></script>
+
+<script src="filesystem:https://webmaker.app/temporary/script.js">
+</script>
+</body>
+</html>
